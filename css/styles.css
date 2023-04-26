@@ -15,6 +15,7 @@
     --title-background-color: #2E2F42;
     --footer-background-color: #2E2F42;
     --portfolio-button-background-color: #F4F4FD;
+    --gradient-img-name: rgba(46, 47, 66, 0.7);
 }
 
 body {
@@ -84,7 +85,8 @@ img {
 .header {
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid var(--border-color)
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -162,8 +164,13 @@ img {
 =============================================*/
 .title-section {
     background-color: var(--title-background-color);
+    background-image: linear-gradient(var(--gradient-img-name),var(--gradient-img-name)), url(../images/img-name.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: auto;
     padding: 188px 0;
-    
 }
 .button-order {
     display: block;
@@ -201,6 +208,7 @@ img {
     letter-spacing: 0.02em;
     max-width: 496px;
     margin: 0 auto;
+    text-align: center;
 }
 .second-title {
     font-size: 36px;
@@ -220,16 +228,6 @@ img {
     color: var(--headers-color);
     margin-bottom: 8px;
 }
-.title-ourteam {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--headers-color);
-    margin-bottom: 72px;
-    text-align: center;
-}
 
 /*=============================================
 =            decription section  / second          =
@@ -244,7 +242,16 @@ img {
 .info-container {
     flex-basis: 264px;
 }
-
+.icon-desc {
+    background: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 24px 100px;
+}
+svg {
+    width: 64px;
+    height: 64px;
+}
 /*=============================================
 =            What are we doing - img           =
 =============================================*/
@@ -277,6 +284,9 @@ img {
 .team-name {
     padding: 32px 16px;
     gap: 8px;
+}
+.partner-section {
+    padding: 120px 0;
 }
 
 
@@ -320,7 +330,8 @@ img {
 .filter-button:focus {
     background-color: #404BBF;
     color: #FFFFFF;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section-filter {
     padding: 96px 0 120px;
@@ -347,4 +358,7 @@ img {
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: none;
+}
+.card-info-block:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
