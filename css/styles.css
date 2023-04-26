@@ -337,6 +337,20 @@ img {
     padding: 100px 0;
 
 }
+.footer-container {
+    display: flex;
+}
+.footer-container-left {
+    margin-right: 120px;
+}
+.footer-social-media {
+    display: flex;
+    gap: 16px;
+}
+.footer-info-media {
+    margin-bottom: 16px;
+}
+
 .light-part {
     color: var(--logo-footer-color);
 }
