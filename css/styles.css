@@ -417,14 +417,14 @@ img {
     border: 1px solid #E7E9FC;
     border-top: none;
 }
-.card-info-block:hover {
+.card-link:hover,
+.card-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*=====  Footer  ======*/
 .footer {
     background-color: var(--footer-background-color);
-    color: #F4F4FD;
     padding: 100px 0;
 
 }
@@ -461,6 +461,7 @@ img {
     margin-bottom: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    color: #FFFFFF;
 }
 
 .light-part {
@@ -473,6 +474,7 @@ img {
     letter-spacing: 0.02em;
     font-weight: 400;
     font-size: 16px;
+    color: #FFFFFF;
 }
 
 .footer-svg-link {
@@ -485,6 +487,8 @@ img {
     height: 100%;
     border-radius: 50%;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 .footer-svg-link:hover,
 .footer-svg-link:focus {
